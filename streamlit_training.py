@@ -159,7 +159,7 @@ st.bar_chart(sales_data, x='営業月')
 # checkbox with multiselect
 if st.checkbox('マルチセレクトを使ってグラフを比較する'):
     # エクセルデータの読み込み
-    sales_data = pd.read_excel('/Users/KondohK/Documents/プログラミング/キノコード課題/streamlitの使い方を学んでデプロイしましょう/data/sales_data.xlsx',
+    sales_data = pd.read_excel('https://github.com/ShisokaBot/streamlit_training/blob/master/data/sales_data.xlsx',
                            engine="openpyxl")
     # multiselect
     selected_fruits = st.multiselect(
@@ -197,7 +197,7 @@ if st.checkbox('カラムを3つ並べてデータを表示する'):
 
 # Image
 if st.checkbox('画像を表示する'):
-    image = Image.open('/Users/KondohK/Documents/プログラミング/キノコード課題/streamlitの使い方を学んでデプロイしましょう/data/image.png')
+    image = Image.open('https://github.com/ShisokaBot/streamlit_training/blob/master/data/image.png')
     st.image(image)
     st.image(image, width=500)
 
