@@ -145,7 +145,7 @@ expander2.write('日曜日と祝日がお休みです')
 
 # read_excel
 st.markdown(" ### 月別売上")
-sales_data = pd.read_excel('/Users/KondohK/Documents/プログラミング/キノコード課題/streamlitの使い方を学んでデプロイしましょう/data/sales_data.xlsx',
+sales_data = pd.read_excel('https://github.com/ShisokaBot/streamlit_training/blob/master/data/sales_data.xlsx',
                            engine="openpyxl")
 sales_data
 
